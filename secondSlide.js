@@ -1,6 +1,6 @@
 
-const slider = document.querySelector(".items");
-const slides = document.querySelectorAll(".item");
+const slider = document.getElementById("items");
+const slides = document.getElementById("item");
 const button = document.querySelectorAll(".button");
 
 let current = 0;
