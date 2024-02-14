@@ -29,6 +29,10 @@
   font-size: 22px !important;
 }
 
+.my-btn:hover {
+  box-shadow: 0 4px 8px 0 rgba(243, 116, 116, 0.2), 0 6px 20px 0 rgba(252, 113, 113, 0.19);
+}
+
 .navbar-top {
   margin-top: 40px;
   margin-bottom: 60px;
@@ -162,14 +166,16 @@
 .button-container .button:nth-child(2) {
   float: right;
 }
+
 /* logo section */
-.logo-section{
- margin-top: 20px;
- margin-bottom: 50px;
+.logo-section {
+  margin-top: 20px;
+  margin-bottom: 50px;
   padding: 10px;
   align-content: center;
 }
-.logo-card{
+
+.logo-card {
   width: 350px;
   height: 150px;
   display: flex;
@@ -180,16 +186,27 @@
   background-size: contain;
   justify-content: center;
 }
-.logo-card img{
+
+.logo-card img {
   width: 300px;
 }
 
 /* Provider section */
 .provider-card {
-  padding: 10px 10px;
+  padding: 20px 10px;
   margin-top: 20px;
-
+  cursor: pointer;
+  transition: all 0.8s;
+  border-radius: 5px;
 }
+
+.provider-card:hover {
+  border-radius: 5px;
+  border: 1px solid var(--white);
+  background-color: var(--white);
+  color: var(--black);
+}
+
 
 .number-box {
   width: 60px;
@@ -199,14 +216,22 @@
   border-radius: 5px;
   border: 1px solid var(--white);
 }
-.provider-txt{
+
+.provider-txt {
   margin: 20px;
   padding: 10px;
 }
 
-.provider-btn{
+.provider-btn {
   padding: 10px 10px;
   border-radius: 5px;
   border: 1px solid var(--white);
   text-align: center;
+  transition: all 0.8s;
+}
+
+.provider-btn:hover {
+  color: var(--black);
+  background-color: var(--white);
+  font-weight: bold;
 }
